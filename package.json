@@ -1,16 +1,18 @@
 {
-  "name": "react-generate",
+  "name": "bake-component",
   "version": "0.0.1",
-  "description": "react-generate CLI",
+  "description": "bake-component CLI",
   "private": true,
   "bin": {
-    "react-generate": "bin/react-generate"
+    "bake-component": "bin/bake-component"
   },
   "scripts": {
-    "start": "node bin/react-generate",
-    "format": "prettier --write **/*.{js,json} && standard --fix",
-    "lint": "standard",
+    "start": "node bin/bake-component",
+    "format": "prettier --write '**/*.{--fix}'",
+    "lint": "eslint . --cache --fix",
+    "pretest": "npm run lint",
     "test": "jest",
+    "posttest": "npm run format",
     "watch": "jest --watch",
     "snapupdate": "jest --updateSnapshot",
     "coverage": "jest --coverage"
@@ -27,9 +29,15 @@
     "gluegun": "next"
   },
   "devDependencies": {
-    "standard": "^12.0.1",
+    "eslint": "^5.12.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "jest": "^23.6.0",
     "prettier": "^1.12.1",
-    "jest": "^23.6.0"
+    "standard": "^12.0.1"
   },
   "jest": {
     "testEnvironment": "node"

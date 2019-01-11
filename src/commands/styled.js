@@ -15,10 +15,10 @@ module.exports = {
 
     await generate({
       template: 'styled.js.ejs',
-      target: `${path}.js`,
+      target: `${path}${extension}`,
       props: { name }
     })
 
-    info(`Generated file at ${path}.js`)
+    info(`Generated file at ${path}${extension}`)
   }
 }

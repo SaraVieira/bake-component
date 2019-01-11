@@ -6,9 +6,9 @@ const { build } = require('gluegun')
 async function run (argv) {
   // create a CLI runtime
   const cli = build()
-    .brand('react-generate')
+    .brand('bake-component')
     .src(__dirname)
-    .plugins('./node_modules', { matching: 'react-generate-*', hidden: true })
+    .plugins('./node_modules', { matching: 'bake-component-*', hidden: true })
     .help() // provides default for help, h, --help, -h
     .version() // provides default for version, v, --version, -v
     .create()

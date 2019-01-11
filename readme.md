@@ -1,8 +1,15 @@
-# react-generate CLI
+# bake-component
 
-A CLI for react-generate.
+A CLI for generating several types of react components.
 
-# License
+Install
+
+```sh
+  npm i -g bake-component
+  # or
+  yarn global add bake-component \
+```
+
+## License
 
 MIT - see LICENSE
-

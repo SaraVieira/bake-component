@@ -11,14 +11,14 @@ module.exports = {
       print: { info }
     } = toolbox
 
-    const { path, extension, name } = generateDefaults(parameters)
+    const { path, name, extension } = generateDefaults(parameters)
 
     await generate({
       template: 'component.js.ejs',
-      target: `${path}.js`,
+      target: `${path}${extension}`,
       props: { name }
     })
 
-    info(`Generated file at ${path}.js`)
+    info(`Generated file at ${path}${extension}`)
   }
 }

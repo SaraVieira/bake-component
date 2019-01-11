@@ -13,7 +13,6 @@ module.exports = {
 
     const { path, extension, name } = generateDefaults(parameters)
 
-
     await generate({
       template: 'functional.js.ejs',
       target: `${path}${extension}`,

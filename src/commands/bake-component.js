@@ -3,11 +3,9 @@ const ClassComponent = require('./component')
 const StyledComponent = require('./styled')
 
 module.exports = {
-  name: 'react-generate',
+  name: 'bake-component',
   description: 'Creates a react component',
   run: async toolbox => {
-    const { print } = toolbox
-
     const whatComponent = {
       type: 'list',
       name: 'type',

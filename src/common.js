@@ -5,10 +5,9 @@ module.exports = (parameters) => {
   const path = dir || 'index'
   const extension = path.includes('.js') || path.includes('.jsx') ? '' : '.js'
 
-
   return {
     extension,
     name,
-    path,
+    path
   }
 }
