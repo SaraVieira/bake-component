@@ -1,3 +1,5 @@
+const generateDefaults = require('../common')
+
 module.exports = {
   name: 'functional',
   alias: ['f'],
@@ -9,10 +11,8 @@ module.exports = {
       print: { info }
     } = toolbox
 
-    const name = parameters.first || 'Component'
-    const dir = parameters.second || null
-    const path = dir || 'index'
-    const extension = path.includes('.js') ? '' : '.js'
+    const { path, extension, name } = generateDefaults(parameters)
+
 
     await generate({
       template: 'functional.js.ejs',

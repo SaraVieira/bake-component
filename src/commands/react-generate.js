@@ -1,5 +1,6 @@
 const FunctionalComponent = require('./functional')
 const ClassComponent = require('./component')
+const StyledComponent = require('./styled')
 
 module.exports = {
   name: 'react-generate',
@@ -54,6 +55,16 @@ module.exports = {
 
     if (type === 'Class Component') {
       return ClassComponent.run({
+        ...toolbox,
+        parameters: {
+          first: name,
+          second: where
+        }
+      })
+    }
+
+    if (type === 'Styled Component') {
+      return StyledComponent.run({
         ...toolbox,
         parameters: {
           first: name,

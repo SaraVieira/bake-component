@@ -1,9 +1,9 @@
 const generateDefaults = require('../common')
 
 module.exports = {
-  name: 'component',
-  alias: ['c'],
-  description: 'Creates a class component',
+  name: 'styled',
+  alias: ['s'],
+  description: 'Creates a styled component',
   run: async toolbox => {
     const {
       parameters,
@@ -14,7 +14,7 @@ module.exports = {
     const { path, extension, name } = generateDefaults(parameters)
 
     await generate({
-      template: 'component.js.ejs',
+      template: 'styled.js.ejs',
       target: `${path}.js`,
       props: { name }
     })
