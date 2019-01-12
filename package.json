@@ -1,6 +1,6 @@
 {
   "name": "bake-component",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "bake-component CLI",
   "private": true,
   "bin": {
