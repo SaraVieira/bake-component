@@ -16,6 +16,8 @@ A CLI for generating several types of react components.
 
 ```bash
   bake-component
+  # or
+  bake
 ```
 
 Will prompt you with what component to create, name and path.
@@ -23,11 +25,11 @@ Will prompt you with what component to create, name and path.
 ### Functional Component
 
 ```bash
-  bake-component functional
+  bake functional
 
   # or
 
-  bake-component f
+  bake f
 ```
 
 Creates a functional Component with the name `Component` in `index.js`
@@ -40,11 +42,11 @@ Creates a functional Component with the name `Component` in `index.js`
 ## Class Component
 
 ```bash
-  bake-component component
+  bake component
 
   # or
 
-  bake-component c
+  bake c
 ```
 
 Creates a class Component with the name `Component` in `index.js`
@@ -57,11 +59,11 @@ Creates a class Component with the name `Component` in `index.js`
 ### Styled Component
 
 ```bash
-  bake-component styled
+  bake styled
 
   # or
 
-  bake-component s
+  bake s
 ```
 
 ### Arguments
